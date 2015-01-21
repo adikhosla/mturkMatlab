@@ -22,7 +22,12 @@ The basic usage is relatively simple:
     $ cd mturkMatlab
     $ matlab
     >> addpath(genpath('.'));
-    >> 
+    >> aws_access_key = 'XXXXXXXXXX';
+    >> aws_secret_key = 'YYYYYYYYYY';
+    >> sandbox = true;
+    >> turk = InitializeTurk(aws_access_key, aws_secret_key, sandbox);
+    >> [result, found_error] = GetAccountBalance(turk, GetAccountBalanceStruct());
+ 
 
 Demo
 ----
