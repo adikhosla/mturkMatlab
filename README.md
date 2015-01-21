@@ -22,9 +22,9 @@ The basic usage is relatively simple:
     $ cd mturkMatlab
     $ matlab
     >> addpath(genpath('.'));
-    >> aws_access_key = 'XXXXXXXXXX';
-    >> aws_secret_key = 'YYYYYYYYYY';
-    >> sandbox = true;
+    >> aws_access_key = 'XXXXXXXXXX';           % access key from AWS
+    >> aws_secret_key = 'YYYYYYYYYY';           % secret key from AWS
+    >> sandbox = true;                          % run functions on sandbox
     >> turk = InitializeTurk(aws_access_key, aws_secret_key, sandbox);
     >> [result, found_error] = GetAccountBalance(turk, GetAccountBalanceStruct());
  
@@ -47,6 +47,8 @@ Questions and Comments
 ----------------------
 
 If you have any feedback, please email <a href="http://people.csail.mit.edu/khosla">Aditya Khosla</a> at <a href="mailto:khosla@csail.mit.edu">khosla@csail.mit.edu</a>.
+
+Also, pull requests of fixes/improvements are most welcome.
 
 
 Disclaimer
