@@ -1,25 +1,23 @@
-addpath(genpath('mturkMatlab'));
-
 numHITs = 10;
-expt = 'abstract_scenes';
+expt = 'external_hit';
 
-questionFile = 'memorability.question';
+questionFile = 'external_hit.question';
 
 params = CreateHITStruct();
-turk = config();
+turk = turkConfig();
 turk.sandbox = true;
 
-params.Title = 'Memorability Game';
-params.Description = 'Test your memory of face images! $0.30 per 5 minute level. You can do multiple HITs one after another - it is a fun and interesting HIT!';
+params.Title = 'External HIT demo';
+params.Description = 'This external HIT has been created using MATLAB! Check out the mturkMatlab toolbox to see how.';
 
 question = readTextFile(questionFile);
 question = strrep(question, '{{expt}}', expt);
 params.Question = question;
 
-params.Reward.Amount = 0.3;
+params.Reward.Amount = 0.1;
 params.AssignmentDurationInSeconds = 15*60;
 params.LifetimeInSeconds = 60*60*24*3;
-params.Keywords = 'memory, game, images, faces';
+params.Keywords = 'external, hit, mturkMatlab';
 results = cell(numHITs, 1);
 
 for i=1:numHITs

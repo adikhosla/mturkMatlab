@@ -24,7 +24,7 @@ The basic usage is relatively simple:
     >> addpath(genpath('.'));
     >> aws_access_key = 'XXXXXXXXXX';           % access key from AWS
     >> aws_secret_key = 'YYYYYYYYYY';           % secret key from AWS
-    >> sandbox = true;                          % run functions on sandbox
+    >> sandbox = true;                          % run API functions on sandbox
     >> turk = InitializeTurk(aws_access_key, aws_secret_key, sandbox);
     >> [result, found_error] = GetAccountBalance(turk, GetAccountBalanceStruct());
  

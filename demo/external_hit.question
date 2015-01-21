@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
-    <ExternalURL>http://wednesday.csail.mit.edu/memorability/</ExternalURL>
+		<ExternalURL>https://people.csail.mit.edu/khosla?expt={{expt}}</ExternalURL>
     <FrameHeight>800</FrameHeight>
 </ExternalQuestion>

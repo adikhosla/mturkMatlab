@@ -1,4 +1,4 @@
-function ApproveAndDisposeAll(turk)
+turk = turkConfig();
 r = SearchHITs(turk, SearchHITsStruct());
 
 if(isfield(r, 'HIT'))
