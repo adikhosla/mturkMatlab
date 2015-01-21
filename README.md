@@ -27,7 +27,7 @@ The basic usage is relatively simple:
 Demo
 ----
 
-There are a few demo scripts provided in the <a href="blob/master/demo">demo</a> folder to help you get started. There are sample scripts for checking your balance, creating external HITs and approving and deleting all HITs.
+There are a few demo scripts provided in the <a href="demo">demo</a> folder to help you get started. There are sample scripts for checking your balance, creating external HITs and approving and deleting all HITs.
 
 Reference
 ---------
@@ -47,7 +47,7 @@ If you have any feedback, please email <a href="http://people.csail.mit.edu/khos
 Disclaimer
 ----------
 
-This toolbox is released under the MIT license. For additional details see <a href="blob/master/LICENSE">LICENSE</a> file.
+This toolbox is released under the MIT license. For additional details see <a href="LICENSE">LICENSE</a> file.
 
 
 
