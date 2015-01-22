@@ -27,7 +27,15 @@ The basic usage is relatively simple:
     >> sandbox = true;                          % run API functions on sandbox
     >> turk = InitializeTurk(aws_access_key, aws_secret_key, sandbox);
     >> [result, found_error] = GetAccountBalance(turk, GetAccountBalanceStruct());
+    >> disp(['Your balance is $' result.AvailableBalance.Amount]);
+
+You can obtain your AWS access key and secret key from Amazon's console <a href="https://console.aws.amazon.com/iam/home?#security_credential" target="_new">here</a>.
+
+The API functions in the toolbox such as CreateHIT or GetAccountBalance require 2 arguments:
  
+ - <b>turk</b>: this is a structure containing basic information for all functions such as your access key and secret key, as well as whether the current commands are to be executed on Sandbox or not. The way to initialize this variable is shown above. Note that the structure contains other options that you can modify if you see fit.
+
+ - <b>Function struct</b>: this is a structure that is specific to the function being called. If the API function to be called is Func(), then the structure associated with that function can be obtained by calling FuncStruct(). The value returned will contain a structure containing the set of arguments possible for that particular API function. You can modify these values before calling the API function. In many cases this structure will not require any modification, as in the example above. In the <a href="demo">demo</a> folder, there are various examples where this structure is modified before calling the API function.
 
 Demo
 ----
