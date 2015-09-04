@@ -16,7 +16,7 @@ for i=1:length(hits)
     
     if(~exist(HITFile, 'file'))
         assignment = GetAssignmentsForHIT(turk, GetAssignmentsForHITStruct(hits(i)));
-        data = parseMemorabilityAssignment(assignment);
+        data = parseAssignment(assignment);
         save(HITFile, 'assignment', 'data');
     else
         tmp = load(HITFile, 'data', 'assignment');
