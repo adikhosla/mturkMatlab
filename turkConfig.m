@@ -1,5 +1,4 @@
 function [turk] = turkConfig()
-addpath mturkMatlab/;
 
 aws_access_key = '';
 aws_secret_key = '';
