@@ -5,7 +5,7 @@ Toolbox for MATLAB to communicate with Amazon's Mechanical Turk (MTurk) using th
 
 The toolbox is designed to be simple and easy to use and is largely modeled around providing the same functionality as Amazon's <a href="http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/Welcome.html">MTurk API</a>. The function names and arguments are intentionally kept identical to the <a href="http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_OperationsArticle.html">Operations</a> from the MTurk API to provide a familiar interface for people currently using other toolboxes.
 
-The toolbox works with MATLAB and has not been tested on Octave (please let me know if you find out either way!).
+The toolbox works with MATLAB and has not been tested on Octave (please let me know if you find out either way!). <b>Note: </b> it seems that there are some inexplicable Java errors when using earlier versions of MATLAB (<=2012). Please upgrade your version of MATLAB if you encounter these.
 
 Installation
 ------------
